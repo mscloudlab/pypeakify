@@ -1,0 +1,49 @@
+site_name: PyPeakify Docs
+
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - User Guide:
+    - Peaks: peaks.md
+    - Baselines: baselines.md
+    # - Peak Detection: peak_detection.md
+    - File Loading and Data Utility: reading_files.md
+    - Deconvolutions: deconvolutions.md
+    - Plotting: plotting.md
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+  icon:
+    logo: fontawesome/solid/mountain-sun
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+
+repo_url: https://github.com/mscloudlab/pypeakify
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
