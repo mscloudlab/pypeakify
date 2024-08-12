@@ -13,7 +13,8 @@ setup(
         'scipy',
         'matplotlib',
         'tabulate',
-        'requests'
+        'requests',
+        'jcamp'
     ],
     package_dir={'': 'src'},
     classifiers=[

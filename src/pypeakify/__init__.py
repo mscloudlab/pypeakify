@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 from .peak import Peak, gaussian, lorentzian
 from .deconvolution import Deconvolution
